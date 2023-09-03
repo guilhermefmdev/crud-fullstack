@@ -4,7 +4,7 @@ const Form = () => {
     const ref = useRef()
     return (
         <>
-            <div className='form' ref={ref}>
+            <form className='form' ref={ref}>
                 <div className='input-area'>
                     <label>Nome:</label>
                     <input type="text" />
@@ -23,7 +23,7 @@ const Form = () => {
                 </div>
 
                 <button type='submit'>SALVAR</button>
-            </div>
+            </form>
         </>
     )
 }
