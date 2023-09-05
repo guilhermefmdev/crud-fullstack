@@ -28,6 +28,7 @@
 .user-btn {
     cursor: pointer;
     transition: all 100ms;
+    width: 5%;
 }
 
 .user-btn:active {

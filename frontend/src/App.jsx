@@ -8,13 +8,12 @@ import { useEffect, useState } from 'react'
 
 function App() {
   const [users, setUsers] = useState([])
-  // const [onEdit, setOnEdit] = useState(null)
+  const [onEdit, setOnEdit] = useState(null)
 
   const getUsers = async () => {
     try {
       const res = await axios.get("http://localhost:3000")
-      const data = res.data
-      setUsers(data)
+      setUsers(res.data.sort((a, b) => (a.nome > b.nome ? 1 : -1)))
     } catch (error) {
       toast.error(error)
     }
