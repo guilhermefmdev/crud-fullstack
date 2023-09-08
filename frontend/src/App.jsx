@@ -5,6 +5,7 @@ import Form from './components/Form/Form'
 import Table from './components/Table/Table'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   const [users, setUsers] = useState([])
@@ -26,10 +27,21 @@ function App() {
     <>
       <Container>
         <h2>Usuários</h2>
-        <Form />
-        <Table users={users} />
+        <Form onEdit={onEdit} getUsers={getUsers} setOnEdit={setOnEdit} />
+        <Table users={users} setUsers={setUsers} setOnEdit={setOnEdit} />
       </Container>
-      <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   )
 }
