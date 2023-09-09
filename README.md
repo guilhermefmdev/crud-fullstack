@@ -6,8 +6,8 @@ O objetivo dessa aplicação é o _registro_ de clientes/usuários, possibilitan
 
 ## Como rodar?
 
-Após clonar o repositório, abra-o em seu editor de código e rode o comando `npm install` para instalar as dependências necessárias.
+Após clonar o repositório, abra-o o terminal e rode o comando `npm install` para instalar as dependências necessárias.
 
 Para utilizar a aplicação, será necessário estar com a API e o frontend rodando simultâneamente na sua máquina, para isso, rode o comando `npm run dev` no terminal da API e do frontend.
 
-Para vizualizá-la em seu navegador basta inserir o endereço: `https://localhost:5173`
+Para vizualizá-la em seu navegador basta inserir o endereço: `https://localhost:5173` ou com a porta que tiver configurado.
